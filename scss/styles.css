@@ -28,21 +28,26 @@ body {
 .header {
   max-width: 100%;
 }
+
 .header container {
   position: relative;
 }
+
 .header__inner {
   max-width: 100%;
   padding-top: 30px;
 }
+
 .header__inner-up {
   position: relative;
   display: flex;
 }
+
 .header__inner-up {
   position: relative;
   margin-bottom: 20px;
 }
+
 .header__inner-up::after {
   content: '';
   position: absolute;
@@ -52,11 +57,13 @@ body {
   left: 0;
   bottom: 4px;
 }
+
 .header__inner-logo {
   width: 70px;
   height: 70px;
   margin-left: 30px;
 }
+
 .header__inner-titletext {
   font-size: 60px;
   line-height: 75px;
@@ -64,14 +71,17 @@ body {
   cursor: pointer;
   transition: all 0.6s;
 }
+
 .header__inner-titletext:hover {
   color: #23296b;
 }
+
 .header__logoimg {
   width: 70px;
   height: 70px;
   cursor: pointer;
 }
+
 .header-menu {
   background-color: #8d2020;
 }
@@ -79,17 +89,19 @@ body {
 .navigation__item {
   text-transform: uppercase;
 }
+
 .navigation__item + .navigation__item {
   margin-top: 15px;
 }
+
 .navigation__link {
   color: #000;
   font-weight: 400;
   transition: all .2s;
 }
+
 .navigation__link:hover {
   font-weight: 600;
   color: #23296b;
 }
-
 /*# sourceMappingURL=styles.css.map */
