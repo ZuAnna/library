@@ -119,9 +119,26 @@ body {
 }
 .mainall__title {
   display: flex;
+  margin-bottom: 45px;
 }
 .mainall__titletext {
   margin: 0 auto;
+}
+
+.allbooks {
+  width: 100%;
+}
+.allbooks__nobooks {
+  margin: 0 auto;
+  border: 2px solid #23296b;
+  border-radius: 5% 40%;
+}
+.allbooks__nobooks-text {
+  width: 100%;
+  font-size: 40px;
+  padding: 50px 80px;
+  text-align: center;
+  color: #23296b;
 }
 
 /*# sourceMappingURL=styles.css.map */

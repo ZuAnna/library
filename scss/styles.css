@@ -17,6 +17,7 @@ a {
 body {
   font-family: "Cormorant Infant", serif;
   font-size: 22px;
+  font-weight: 500;
 }
 
 .container {
@@ -96,11 +97,50 @@ body {
 
 .navigation__link {
   color: #000;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.2s;
 }
 
 .navigation__link:hover {
-  font-weight: 600;
+  font-weight: 700;
   color: #23296b;
+}
+
+.main__inner {
+  max-width: 500px;
+  height: 500px;
+  background-color: #ced3ff;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.main__texts {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 40%;
+  font-size: 24px;
+  cursor: default;
+}
+
+.main__text + .main__text {
+  padding-top: 30px;
+}
+
+.mainall {
+  width: 100%;
+}
+
+.mainall__title {
+  display: flex;
+}
+
+.mainall__titletext {
+  margin: 0 auto;
+}
+
+.allbooks {
+  width: 100%;
 }
