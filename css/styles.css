@@ -45,7 +45,7 @@ body {
   margin-bottom: 20px;
 }
 .header__inner-up::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -86,7 +86,7 @@ body {
 .navigation__link {
   color: #000;
   font-weight: 500;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .navigation__link:hover {
   font-weight: 700;
@@ -112,6 +112,16 @@ body {
 }
 .main__text + .main__text {
   padding-top: 30px;
+}
+
+.mainall {
+  width: 100%;
+}
+.mainall__title {
+  display: flex;
+}
+.mainall__titletext {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -49,7 +49,7 @@ body {
 }
 
 .header__inner-up::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -97,11 +97,10 @@ body {
 .navigation__link {
   color: #000;
   font-weight: 400;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .navigation__link:hover {
   font-weight: 600;
   color: #23296b;
 }
-/*# sourceMappingURL=styles.css.map */
