@@ -123,6 +123,7 @@ body {
 }
 .mainall__titletext {
   margin: 0 auto;
+  cursor: default;
 }
 
 .allbooks {
