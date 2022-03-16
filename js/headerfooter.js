@@ -29,4 +29,27 @@ class MyHeader extends HTMLElement {
    `
    }
 }
-customElements.define('my-header', MyHeader)
+customElements.define('my-header', MyHeader);
+
+class MyFooter extends HTMLElement {
+  connectedCallback (){
+    this.innerHTML = `
+    <footer class="footer">
+    <div class="container">
+      <div class="footer__text">
+        <a href="https://github.com/ZuAnna" class="footer__link">
+          <p class="footer__text-p">
+          ZuAnna (github)
+         </p>
+        </a>
+        <a href="mailto:anyanikitina.an@yandex.ru" class="footer__email"> <span> &#8595 По вопросам и предложениям &#8595</span><br>anyanikitina.an@yandex.ru</a>
+
+      </div>
+    </div>
+  </footer>
+
+  `
+  }
+}
+
+customElements.define ('my-footer', MyFooter);

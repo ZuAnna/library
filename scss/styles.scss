@@ -13,11 +13,22 @@ a {
 }
 
 $accentColor: #23296b;
+$bckColor:#ced3ff;
+
+html{
+  height: 100%;
+}
 body {
   font-family: "Cormorant Infant", serif;
   font-size: 22px;
   font-weight: 500;
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto;
 }
+// body, html{
+//   min-height: 100vh;
+// }
 .container {
   max-width: 1300px;
   padding: 0 120px;
@@ -94,11 +105,15 @@ body {
   }
 }
 
+main{
+
+}
 .main {
+
   &__inner {
     max-width: 500px;
     height: 500px;
-    background-color: #ced3ff;
+    background-color: $bckColor;
     border-radius: 50%;
     margin: 0 auto;
   }
@@ -122,8 +137,7 @@ body {
   &__title {
     display: flex;
     margin-bottom: 45px;
-    // text-align: center;
-    // margin: 0 auto;
+
   }
   &__titletext {
     margin: 0 auto;
@@ -145,5 +159,15 @@ body {
         text-align: center;
         color: $accentColor;
       }
+  }
+}
+.footer{
+  position: sticky;
+  text-align: center;
+  background-color: $bckColor;
+  bottom: 0;
+  &__text{
+    margin-top: 30px;
+    padding: 23px 0;
   }
 }
