@@ -162,15 +162,15 @@ body {
 }
 
 .footer {
-  position: -webkit-sticky;
-  position: sticky;
   text-align: center;
   background-color: #ced3ff;
-  bottom: 0;
 }
 .footer__text {
   margin-top: 30px;
-  padding: 23px 0;
+  padding: 7px 0 10px 0;
+}
+.footer__link {
+  line-height: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

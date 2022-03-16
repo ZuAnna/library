@@ -104,10 +104,6 @@ body {
     color: $accentColor;
   }
 }
-
-main{
-
-}
 .main {
 
   &__inner {
@@ -162,12 +158,13 @@ main{
   }
 }
 .footer{
-  position: sticky;
   text-align: center;
   background-color: $bckColor;
-  bottom: 0;
   &__text{
     margin-top: 30px;
-    padding: 23px 0;
+    padding: 7px 0 10px 0;
+  }
+  &__link{
+    line-height: 40px;
   }
 }
