@@ -1,0 +1,31 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "example rest api my library",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZuAnna/library.git"
+  },
+  "keywords": [
+    "js",
+    "rest",
+    "api"
+  ],
+  "author": "ZuAnna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZuAnna/library/issues"
+  },
+  "homepage": "https://github.com/ZuAnna/library#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
