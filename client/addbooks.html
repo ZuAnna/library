@@ -38,21 +38,89 @@
     <meta name="msapplication-TileColor" content="#aee4f0" />
     <meta name="theme-color" content="#aee4f0" />
     <script type="module" src="../js/headerfooter.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      [v-cloack]{
+        display: none;
+      }
+    </style>
     <link rel="stylesheet" href="../css/styles.css" />
+
 
    <title>Добавить книгу</title>
 </head>
 <body>
-   <my-header></my-header>
-   <main class="mainadd">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__inner-up">
+          <div class="header__inner-title">
+            <a href="../index.html" class="header__text-link"><h1 class="header__inner-titletext">Моя библиотека</h1></a>
+          </div>
+          <div class="header__inner-logo">
+           <a href="../index.html" class="header__logo-link"><img src="../images/books.svg" alt="logo" class="header__logoimg"/></a>
+          </div>
+
+        </div>
+        <div class="header__inner-menu">
+          <nav class="navigation">
+            <ul class="navigation__items">
+              <li class="navigation__item"><a href="../index.html" class="navigation__link">ГЛАВНАЯ</a></li>
+              <li class="navigation__item"><a href="../allbooks.html" class="navigation__link">ВСЕ КНИГИ</a></li>
+              <li class="navigation__item"><a href="../readed.html" class="navigation__link">ПРОЧИТАННЫЕ</a> </li>
+              <li class="navigation__item"><a href="addbooks.html" class="navigation__link">ДОБАВИТЬ КНИГУ</a> </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+   <!-- <main class="mainadd">
       <div class="container">
          <div class="mainadd__inner">
 
          </div>
       </div>
-   </main>
+   </main> -->
+   <div class="container pt-3" id="app" v-cloack>
+     <h1 class="add__title">Добавить книгу</h1>
+     <form class="form-inline mb-3" @submit.prevent="createContact">
+      <div class="form-group mr-5">
+        <label for="name" class="mr-3" >Название</label>
+        <input type="text" class="form-control" id="name" v-model="form.name" autocomplete="off">
+      </div>
+      <div class="form-group mr-5">
+        <label for="value" class="mr-3">Автор</label>
+        <input type="text" class="form-control" id="value" v-model="form.value" autocomplete="off" >
+      </div>
+      <button class="btn btn-primary" type="submit" :disabled="!canCreate">Создать</button>
+    </form>
 
-   <my-footer></my-footer>
+    <div v-if="loading">
+      <loader />
+    </div>
+
+    <div v-if="contacts.length">
+       <div class="card mb-3" v-for="contact in contacts">
+        <div class="card-body">
+          <h5 class="card-title" :style="{color: contact.marked ? 'red' : 'black'}">{{contact.name}}</h5>
+          <p class="card-text">{{contact.value}}</p>
+          <button class="btn btn-primary" @click="markContact(contact.id)" :disabled="contact.marked">Отметить</button>
+          <button class="btn btn-danger" @click="removeContact(contact.id)">Удалить</button>
+        </div>
+      </div>
+      <p v-else>Библиотека пуста</p>
+    </div>
+
+
+
+
+   </div>
+   <my-footer>
+   </my-footer>
 
    <script type="module" src="front.js"></script>
 </body>

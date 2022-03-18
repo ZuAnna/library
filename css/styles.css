@@ -88,6 +88,9 @@ body {
   background-color: #8d2020;
 }
 
+.navigation .navigation__items {
+  padding-left: 0;
+}
 .navigation__item {
   text-transform: uppercase;
 }
@@ -171,6 +174,11 @@ body {
 }
 .footer__link {
   line-height: 40px;
+}
+
+.add__title {
+  text-align: center;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

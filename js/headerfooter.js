@@ -19,7 +19,7 @@ class MyHeader extends HTMLElement {
                 <li class="navigation__item"><a href="index.html" class="navigation__link">ГЛАВНАЯ</a></li>
                 <li class="navigation__item"><a href="allbooks.html" class="navigation__link">ВСЕ КНИГИ</a></li>
                 <li class="navigation__item"><a href="readed.html" class="navigation__link">ПРОЧИТАННЫЕ</a> </li>
-                <li class="navigation__item"><a href="addbooks.html" class="navigation__link">ДОБАВИТЬ КНИГУ</a> </li>
+                <li class="navigation__item"><a href="client/addbooks.html" class="navigation__link">ДОБАВИТЬ КНИГУ</a> </li>
               </ul>
             </nav>
           </div>

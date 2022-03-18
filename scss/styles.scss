@@ -35,6 +35,8 @@ body {
   margin: 0 auto;
 }
 
+
+
 .header {
   max-width: 100%;
   & container {
@@ -88,6 +90,9 @@ body {
   }
 }
 .navigation {
+  .navigation__items{
+    padding-left: 0;
+  }
   &__item {
     text-transform: uppercase;
   }
@@ -166,5 +171,11 @@ body {
   }
   &__link{
     line-height: 40px;
+  }
+}
+.add{
+  &__title{
+    text-align: center;
+    font-weight: 700;
   }
 }
