@@ -2,7 +2,9 @@ const express = require('express')
 const path = require('path')
 const app = express()
 
-
+const CONTACTS = [
+   {id:1, name: 'Мцыри', value: 'Лермонтов', marked: false }
+]
 
 
 

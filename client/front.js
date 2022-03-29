@@ -9,7 +9,7 @@ new Vue({
             value:''
          },
          contacts: [
-            {id:1, name: 'Мцыри', value: 'Лермонтов', marked: false }
+
          ]
       }
    },
@@ -35,3 +35,21 @@ new Vue({
       }
    }
 })
+
+async function request (url, method = 'GET', data = null) {
+ try {
+    const headers = {}
+
+    if (data){
+       headers['Content-Type'] = 'application/json'
+    }
+
+    fetch(url, {
+       method,
+       headers
+    })
+
+ }catch (e) {
+   console.warn('Error:', e.message)
+ }
+}
