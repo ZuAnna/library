@@ -181,4 +181,35 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 800px) {
+  my-header {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 766px) {
+  .header__inner-titletext {
+    font-size: 40px;
+  }
+}
+@media (max-width: 623px) {
+  .navigation__item + .navigation__item {
+    margin-top: 30px;
+  }
+
+  .header__inner-up {
+    display: inline-block;
+    text-align: center;
+  }
+  .header__inner-logo {
+    margin: 0 auto 15px;
+  }
+  .header__inner-title {
+    display: inline;
+    width: 100%;
+  }
+  .header__inner-titletext {
+    line-height: 55px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
