@@ -6,7 +6,9 @@ const CONTACTS = [
    {id:1, name: 'Мцыри', value: 'Лермонтов', marked: false }
 ]
 
-
+app.get('/api/contacts', (req, res)=> {
+   res.status(200).json(CONTACTS)
+})
 
 
 
