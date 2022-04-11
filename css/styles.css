@@ -79,6 +79,9 @@ body {
 .header__inner-titletext:hover {
   color: #23296b;
 }
+.header__inner-hamburger {
+  display: none;
+}
 .header__logoimg {
   width: 70px;
   height: 70px;
@@ -209,6 +212,36 @@ body {
   }
   .header__inner-titletext {
     line-height: 55px;
+  }
+}
+@media (max-width: 420px) {
+  .header__inner-menu {
+    position: relative;
+    z-index: 10;
+  }
+
+  .header__inner-hamburger {
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 11;
+  }
+  .header__inner-hamburger:focus {
+    outline: none;
+  }
+  .header__inner-hamburger-btn {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .navigation__items {
+    text-align: center;
   }
 }
 

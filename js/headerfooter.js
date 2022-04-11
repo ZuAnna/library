@@ -14,6 +14,8 @@ class MyHeader extends HTMLElement {
 
           </div>
           <div class="header__inner-menu">
+          <button class="header__inner-hamburger">
+          <span class="header__inner-hamburger-btn"></span></button>
             <nav class="navigation">
               <ul class="navigation__items">
                 <li class="navigation__item"><a href="index.html" class="navigation__link">ГЛАВНАЯ</a></li>

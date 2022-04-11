@@ -78,6 +78,9 @@ body {
     &-titletext:hover {
       color: $accentColor;
     }
+    &-hamburger{
+      display: none;
+    }
   }
   &__logoimg {
     width: 70px;
@@ -222,4 +225,34 @@ margin: 0 auto 15px;
 line-height: 55px;
 }
 }
+}
+@media (max-width:420px){
+    .header__inner-menu{
+      position: relative;
+      z-index: 10;
+
+    }
+    .header__inner-hamburger{
+      display: block;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 11;
+      &:focus{
+        outline: none;
+      }
+      &-btn{
+        display: block;
+      }
+    }
+    .navigation{
+      display: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      &__items{
+        text-align: center;
+      }
+    }
+
 }
