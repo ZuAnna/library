@@ -218,13 +218,19 @@ body {
   .header__inner-menu {
     position: relative;
     z-index: 10;
+    padding-bottom: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .header__inner-hamburger {
     display: block;
     position: absolute;
-    right: 50%;
-    top: 50%;
+    left: 38%;
+    top: 30%;
+    width: 50px;
+    height: 20px;
     overflow: hidden;
     cursor: pointer;
     z-index: 11;
@@ -234,6 +240,7 @@ body {
   }
   .header__inner-hamburger-btn {
     display: block;
+    position: absolute;
   }
 
   .navigation {
