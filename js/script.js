@@ -19,3 +19,7 @@ if (childAllbooks.length <= 1) {
    allbooks.removeChild(nobooks);
 }
 
+document.querySelector('.header__inner-hamburger').addEventListener('click', function(e){
+   e.preventDefault();
+   this.classList.toggle('is-active');
+})
